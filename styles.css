@@ -130,6 +130,10 @@ main {
 
 .intro__form-label {
   border-color: var(--gray-900);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
 }
 
 .intro__form-input {
@@ -141,8 +145,36 @@ main {
   width: 100%;
 }
 
+.intro__form-label.error .intro__form-input {
+  border: 2px solid var(--red-400);
+}
+
 .intro__form-input:focus-visible {
   outline: 1px solid var(--purple-700);
+}
+
+.intro__form-error-icon {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-100%);
+  display: none;
+}
+
+.intro__form-label.error .intro__form-error-icon {
+  display: block;
+}
+
+.intro__form-error-message {
+  display: none;
+}
+
+.intro__form-label.error .intro__form-error-message {
+  display: block;
+  font-size: clamp(0.625rem, 0.592rem + 0.175vw, 0.75rem);
+  font-style: italic;
+  text-align: right;
+  color: var(--red-400);
 }
 
 .intro__form-button {
@@ -155,6 +187,10 @@ main {
   font-weight: 500;
   letter-spacing: 2px;
   padding: 0.75rem;
+}
+
+.intro__form-button:hover, .intro__form-button:focus, .intro__form-button:active {
+  background-color: hsla(154, 59%, 51%, 0.80);
 }
 
 .intro__form-terms {
