@@ -23,24 +23,24 @@
         <p class="intro__form-trial"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
         <form class="intro__form">
           <label class="intro__form-label" for="firstname" class="sr-only">
-            <input class="intro__form-input" type="text" id="firstname" name="firstname" placeholder="First Name">
+            <input class="intro__form-input" type="text" id="firstname" name="firstname" placeholder="First Name" aria-describedby="firstname-error">
             <img class="intro__form-error-icon" src="./images/icon-error.svg" alt="">
-            <span class="intro__form-error-message">First Name cannot be empty</span>
+            <span id="firstname-error" class="intro__form-error-message">First Name cannot be empty</span>
           </label>
           <label class="intro__form-label" for="lastname" class="sr-only">
-            <input class="intro__form-input" type="text" id="lastname" name="lastname" placeholder="Last Name">
+            <input class="intro__form-input" type="text" id="lastname" name="lastname" placeholder="Last Name" aria-describedby="lastname-error">
             <img class="intro__form-error-icon" src="./images/icon-error.svg" alt="">
-            <span class="intro__form-error-message">Last Name cannot be empty</span>
+            <span id="lastname-error" class="intro__form-error-message">Last Name cannot be empty</span>
           </label>
           <label class="intro__form-label" for="email" class="sr-only">
-            <input class="intro__form-input" type="email" id="email" name="email" placeholder="Email Address">
+            <input class="intro__form-input" type="email" id="email" name="email" placeholder="Email Address" aria-describedby="email-error">
             <img class="intro__form-error-icon" src="./images/icon-error.svg" alt="">
-            <span class="intro__form-error-message">Looks like this is not an email</span>
+            <span id="email-error" class="intro__form-error-message">Looks like this is not an email</span>
           </label>
           <label class="intro__form-label" for="password" class="sr-only">
-            <input class="intro__form-input" type="password" id="password" name="password" placeholder="Password">
+            <input class="intro__form-input" type="password" id="password" name="password" placeholder="Password" aria-describedby="password-error">
             <img class="intro__form-error-icon" src="./images/icon-error.svg" alt="">
-            <span class="intro__form-error-message">Password cannot be empty</span>
+            <span id="password-error" class="intro__form-error-message">Password cannot be empty</span>
           </label>
           <button class="intro__form-button"type="submit">CLAIM YOUR FREE TRIAL</button>
           <p class="intro__form-terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
